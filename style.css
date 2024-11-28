@@ -609,3 +609,116 @@ span{
                 grid-template-columns:repeat(1,1fr);
             }
         }
+
+        @media(max-width: 767px) {
+            html {
+                font-size: 50%;
+            }
+        
+            .header {
+                padding: 2rem;
+            }
+        
+            .navbar {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                width: 100%; /* Make the navbar full-width on smaller screens */
+                background: rgba(0, 0, 0, 0.9);
+                padding: 2rem 1rem;
+                display: none;
+                flex-direction: column;
+                gap: 2rem;
+            }
+        
+            .navbar.active {
+                display: flex;
+            }
+        
+            .navbar a {
+                font-size: 2rem;
+                margin: 1rem 0;
+                text-align: center;
+            }
+        
+            .Home {
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 3rem;
+                text-align: center;
+            }
+        
+            .Home-content h1 {
+                font-size: 4rem;
+            }
+        
+            .Home-content h3 {
+                font-size: 2.5rem;
+            }
+        
+            .Home-content p {
+                font-size: 1.6rem;
+                max-width: 90%;
+            }
+        
+            .Home-img img {
+                max-width: 70%;
+            }
+        
+            .btn-group {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        
+            .Services-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                padding: 0 2rem;
+                text-align: left;
+            }
+        
+            .timeline-content {
+                padding: 2rem;
+                border-radius: 2rem;
+            }
+        
+            .Contact form {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        
+            .Contact form .input-box {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        
+            .footer {
+                padding: 2rem;
+            }
+        
+            .footer .social a {
+                margin: 0 5px;
+                width: 35px;
+                height: 35px;
+                font-size: 1.8rem;
+            }
+        
+            .footer ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .footer ul li {
+                margin: 5px 0;
+            }
+        
+            .footer ul li a {
+                font-size: 1.6rem;
+            }
+        }
+        
